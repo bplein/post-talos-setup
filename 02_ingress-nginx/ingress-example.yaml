@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/whitelist-source-range: 172.17.0.0/22
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: k8sdash.bvp.me
+    http:
+      paths:
+      - backend:
+          service:
+            name: kubernetes-dashboard-kong-proxy
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - k8sdash.bvp.me
+    secretName: k8sdash.bvp.me
