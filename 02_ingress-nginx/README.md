@@ -1,5 +1,5 @@
 # Ingress-Nginx
-Quick installation of INgress-Nginx from https://kubernetes.github.io/ingress-nginx/ using the quick deployment documented here https://kubernetes.github.io/ingress-nginx/deploy/
+Quick installation of ingress-nginx from https://kubernetes.github.io/ingress-nginx/ using the quick deployment documented here https://kubernetes.github.io/ingress-nginx/deploy/
 
 Install via helm chart. I always use the "upgrade --install" syntax because you can run it over and over again with the same CLI
 ```
