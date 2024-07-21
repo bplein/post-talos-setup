@@ -1,4 +1,4 @@
-#MetalLB
+# MetalLB
 Quick installation of MetalLB to give my applications a consistent IP address on my LAN (and from the WAN when applicable)
 See https://metallb.io/installation/ for more info
 
