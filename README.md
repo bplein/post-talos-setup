@@ -9,3 +9,9 @@ This is my setup for running apps on Talos Linux at home. I have a a fixed IP ad
 I then install Ingress-nginx ingress-controller, and and have it use the loadbalancer, asking for the same IP address. 
 
 I also have cert-manager installed to apply a Let's Encrypt generated cert for each new app. 
+
+Here's a list for you to follow. Feel free to open issues, I might have left some steps out.
+
+[Install MetalLB](01_MetalLB)
+[Install ingress-nginx](02_ingress-nginx)
+[Install cert-manager](03_cert-manager)
