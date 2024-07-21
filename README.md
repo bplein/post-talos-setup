@@ -13,5 +13,7 @@ I also have cert-manager installed to apply a Let's Encrypt generated cert for e
 Here's a list for you to follow. Feel free to open issues, I might have left some steps out.
 
 [Install MetalLB](01_MetalLB)
+
 [Install ingress-nginx](02_ingress-nginx)
+
 [Install cert-manager](03_cert-manager)
