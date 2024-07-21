@@ -10,3 +10,4 @@ helm upgrade --install ingress-nginx ingress-nginx \
 
 This installs an nginx-ingress controller operating on the first IP in the range used by MetalLB.
 
+Included is [ingress-example.yaml](ingress-example.yaml) that shows creating an ingress for an application that is only supposed to be exposed to a range of IPs representing my local LAN. While this will pick up a publicly resolving IP address, nginx will not let IPs outside this range access the app.
